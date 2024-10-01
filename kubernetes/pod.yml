@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: productlab-pod
+  labels:
+    app: productlab-webapi 
+spec:
+  containers:
+    - name: productlab-container
+      image: hbolajraf/productlab-webapi:1.0
+      ports:
+        - containerPort: 80
